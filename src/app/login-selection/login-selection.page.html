@@ -1,0 +1,46 @@
+<ion-content class="ion-padding">
+  <img class="animate__animated animate__zoomIn logo" src="assets/fara_logo.PNG" alt="">
+  <br>
+  <p class="title">{{'loginSelectionPage.title' | translate}}</p>
+  <div class="art"></div>
+  <br>
+  <br>
+  <br>
+  <form #f="ngForm" [formGroup]="phoneForm">
+    <ngx-intl-tel-input [enableAutoCountrySelect]="true" [enablePlaceholder]="true" [searchCountryFlag]="true"
+      [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="false"
+      [selectedCountryISO]="CountryISO.India" [maxLength]="13" [phoneValidation]="true"
+      [separateDialCode]="separateDialCode" [numberFormat]="PhoneNumberFormat.National" name="phone"
+      formControlName="phone">
+    </ngx-intl-tel-input>
+  </form>
+  <div style="position:relative;z-index:10;width:100%;margin-right:auto;">
+    <div id="recaptcha-container"></div>
+  </div>
+  <div class="center">
+    <div class="divider-line-x"><span>{{'loginSelectionPage.or' | translate}}</span></div>
+  </div>
+  <br>
+  <ion-button (click)="fblog()" class="facebook">
+    <ion-icon slot="start" name="logo-facebook"></ion-icon>
+    Facebook
+  </ion-button>
+  <br>
+  <ion-button (click)="gplog()" color="danger" class="asGuestBtn">
+    <ion-icon slot="start" name="logo-google"></ion-icon>
+    Google
+  </ion-button>
+  <br>
+  <ion-button (click)="asGuestLogin()" class="asGuestBtn">
+    <ion-icon slot="start" name="person"></ion-icon>
+    {{'loginSelectionPage.AsGuest' | translate}}
+  </ion-button>
+  <p class="bottomText">{{'loginSelectionPage.protectedBy' | translate}}
+    <span>{{'loginSelectionPage.reCAPTCHA' | translate}}</span>
+    {{'loginSelectionPage.andThe' | translate}}
+    <a href="javascript:void()">{{'loginSelectionPage.privacyPolicy' | translate}}</a>
+    {{'loginSelectionPage.andThe' | translate}}
+    <a href="javascript:void()">{{'loginSelectionPage.termsOfServices' | translate}}</a>
+    {{'loginSelectionPage.apply' | translate}}.
+  </p>
+</ion-content>

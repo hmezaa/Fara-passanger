@@ -1,0 +1,43 @@
+<ion-content class="ion-padding">
+  <ion-slides>
+    <ion-slide>
+      <ion-card class="ion-padding" mode="ios">
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row>
+            <ion-col size="3">
+              <ion-icon (click)="goback()" class="backBtn" name="arrow-back-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="7"></ion-col>
+          </ion-row>
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="8">
+              <h3 class="title">
+                {{'otpPage.otp' | translate}}
+                <br>
+                {{'otpPage.confirmation' | translate}}!
+                <br>
+                <div class="art"></div>
+              </h3>
+            </ion-col>
+            <ion-col size="4">
+            </ion-col>
+            <ion-col size="12">
+              <p class="subText">
+                {{'otpPage.waitingText' | translate}}
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div class="code-input-layer">
+          <code-input [isCodeHidden]="false" [codeLength]="6" (codeChanged)="onCodeChanged($event)"
+            (codeCompleted)="onCodeCompleted($event)">
+          </code-input>
+        </div>
+        <br>
+        <div style="position:relative;z-index:10;width:100%;margin-right:auto;">
+          <div id="recaptcha-container"></div>
+        </div>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

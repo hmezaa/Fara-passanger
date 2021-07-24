@@ -1,0 +1,69 @@
+<ion-header color='transparent' class="ion-no-border">
+  <ion-toolbar color='transparent'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'paymentMethodsPage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="PaymentMethodFound">
+  <ion-card *ngFor="let item of savedcards" class="card" mode="ios">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <p class="title">
+            {{'paymentMethodsPage.HOLDERNAME' | translate}}
+          </p>
+          <p class="subtitle">
+            {{item.holder_name}}
+          </p>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon name="trash-outline" (click)="deleteCard(item)" class="trash"></ion-icon>
+        </ion-col>
+        <ion-col size="9">
+          <p class="number">
+            <span>**** **** ****</span> {{getBeautifyNumber(item.number)}}
+          </p>
+        </ion-col>
+        <ion-col size="3"></ion-col>
+        <ion-col size="9">
+          <p class="exp">
+            <b>{{'paymentMethodsPage.ExpriresDate' | translate}}</b>
+            <br> {{item.expMonth}} / {{item.expYear}}</p>
+        </ion-col>
+        <ion-col size="3">
+          <p class="cvc">
+            <b>{{'paymentMethodsPage.CVC' | translate}}</b>
+            <br> {{item.cvc}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ion-fab (click)="addPaymentMethod()" mode="ios" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<ion-content *ngIf="!PaymentMethodFound">
+  <ion-slides class="swiper-no-swiping">
+    <ion-slide>
+      <ion-card class="card">
+        <p>
+          <ion-icon name="card-outline"></ion-icon> {{'paymentMethodsPage.noFound' | translate}}!
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-fab (click)="addPaymentMethod()" mode="ios" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

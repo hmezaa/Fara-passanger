@@ -1,0 +1,45 @@
+ion-card {
+  border-radius: 13px;
+  outline: none;
+
+  .date {
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #02353c;
+  }
+
+  img {
+    width: 60px;
+    margin: auto;
+    display: block;
+  }
+
+  .title {
+    font-size: 17px;
+    text-align: left;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 0;
+    color: #989aa2;
+  }
+
+  .status {
+    color: red;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .detail {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: black;
+    text-decoration-line: underline;
+  }
+}
+
+.noJourney {
+  text-align: center;
+}
