@@ -1,0 +1,39 @@
+ion-slides{
+  height: 100%;
+}
+.FooterText {
+  margin: 0;
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+ion-item {
+  margin-bottom: 15px;
+  border: 3px solid #f4f5f8;
+  border-radius: 9px;
+
+  ion-label {
+    color: #848484;
+    font-weight: bold;
+  }
+
+  ion-input {
+    color: black;
+    --placeholder-color: black !important;
+  }
+}
+.cardimg{
+  height: 50px;
+  margin: auto;
+  margin-top: 15px;
+  display: block;
+}
+.cardtext{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 35px;
+}

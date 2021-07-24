@@ -1,0 +1,128 @@
+agm-map {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  z-index: 11;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  margin-top: 15px;
+
+  .circle {
+    height: 13px;
+    width: 13px;
+    background: #02353c;
+    border-radius: 9px;
+    margin-top: 7px;
+  }
+
+  .circle2 {
+    height: 13px;
+    width: 13px;
+    background: #02353c;
+    border-radius: 9px;
+    margin-top: 6px;
+  }
+
+  .afterCircle {
+    height: 178%;
+    background: #02353c;
+    width: 0;
+    margin-left: 6px;
+    margin-top: 1px;
+    border: 1px solid #ffffff;
+    border-style: dashed;
+  }
+
+  .textUnderCard {
+    color: black;
+    padding-top: 3px;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.item {
+  width: 92%;
+  margin: auto;
+  display: block;
+  margin-bottom: 13px;
+}
+
+ion-header {
+  ion-toolbar {
+    ion-icon {
+      font-size: 30px;
+      margin-right: 13px;
+    }
+  }
+}
+
+ion-segment {
+  ion-segment-button {
+    img {
+      height: 50px;
+      width: 150px;
+      object-fit: contain;
+    }
+  }
+}
+
+.detailGrid {
+  text-align: center;
+  font-weight: bold;
+
+  ion-icon {
+    font-size: 30px;
+    color: #02353c;
+  }
+
+  .sideArt {
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+  }
+}
+
+.footer {
+  padding: 21px;
+}
+
+.ridenow {
+  height: 35px;
+  width: 100%;
+}
+
+.close {
+  text-align: right;
+  margin: 0;
+
+  ion-icon {
+    background: #eb445a;
+    font-size: 24px;
+    color: white;
+    border-radius: 3px;
+  }
+}
+
+.selectPackage {
+  margin: 0;
+  font-weight: bold;
+}
+
+.FooterHead {
+  margin-bottom: 11px;
+}
+
+.pay_img {
+  height: 35px;
+  margin-top: -5px;
+  margin-bottom: 7px;
+  width: auto;
+  object-fit: contain;
+}

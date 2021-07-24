@@ -1,0 +1,36 @@
+<ion-header color='transparent' class="ion-no-border">
+  <ion-toolbar color='transparent'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'favDestinationPage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <input type="text" [value]="destinationValue" ngx-google-places-autocomplete [options]='options'
+    #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)" class="input"
+    placeholder="{{'favDestinationPage.placeholder' | translate}}">
+  <br>
+  <ion-slides *ngIf="destinations.length === 0" class="swiper-no-swiping" style="height: 85%;">
+    <ion-slide>
+      <p class="notfound">{{'favDestinationPage.noFound' | translate}}</p>
+    </ion-slide>
+  </ion-slides>
+  <div class="list">
+    <ion-item *ngFor='let item of destinations' class="ion-no-padding ion-no-margin" lines="none">
+      <div>
+        <p class="title">
+          <ion-icon name="bookmark" class="icon"></ion-icon> {{item.routeTitle}}
+        </p>
+        <p class="subtitle">
+          {{item.routePath}}
+        </p>
+      </div>
+      <ion-icon (click)="removeLocation(item)" name="trash-outline" class="trash" slot="end"></ion-icon>
+    </ion-item>
+  </div>
+</ion-content>

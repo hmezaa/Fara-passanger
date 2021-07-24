@@ -1,0 +1,63 @@
+<ion-header color='light' class="ion-no-border">
+  <ion-toolbar color='light'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'editProfilePage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides>
+    <ion-slide>
+      <ion-card mode="ios" class="ion-padding">
+        <div>
+          <img [src]="uploadedImage()? url + image : 'assets/noimg.png'" class="img" alt="">
+          <ion-icon (click)="cameraOrGallery()" name="pencil" class="editicon"></ion-icon>
+        </div>
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="5.8">
+              <ion-item lines="none" mode="md">
+                <ion-label position="stacked">{{'editProfilePage.FirstName' | translate}}</ion-label>
+                <ion-input [(ngModel)]="passengerData.firstName" type="text"
+                  placeholder="{{'editProfilePage.Enterfirstname' | translate}}"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="0.4"></ion-col>
+            <ion-col size="5.8">
+              <ion-item lines="none" mode="md">
+                <ion-label position="stacked">{{'editProfilePage.LastName' | translate}}</ion-label>
+                <ion-input [(ngModel)]="passengerData.lastName" type="text"
+                  placeholder="{{'editProfilePage.Enterlastname' | translate}}"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'editProfilePage.PhoneNumber' | translate}}</ion-label>
+          <ion-input [(ngModel)]="passengerData.phoneNumber" type="number" placeholder="(###) ###-##-##"></ion-input>
+        </ion-item>
+
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="12">
+              <ion-button (click)="updateRequested? updateUpdated() : update()" expand="block" color="primary">
+                {{'editProfilePage.UPDATE' | translate}}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <p *ngIf="alertMessage" class="pendingRequest" [style.background]="messageColor">
+          *{{alertMessage}}
+        </p>
+        <ion-icon *ngIf="alertMessage" (click)="close()" name="close"></ion-icon>
+
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

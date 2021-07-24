@@ -1,0 +1,20 @@
+<ion-header color='light' class="ion-no-border">
+  <ion-toolbar color='light'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'HelpAndSupportPage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list class="list">
+    <ion-item button *ngFor='let item of navlist' lines="none" (click)='route(item.route);'>
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      <ion-label>{{'HelpAndSupportPage.'+ item.title | translate}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

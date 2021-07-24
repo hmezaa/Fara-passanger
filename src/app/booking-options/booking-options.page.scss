@@ -1,0 +1,151 @@
+ion-content {
+  --background: linear-gradient(180deg, #ffffff, rgb(0 0 0 / 12%)),
+    url("../../assets/ukarineMap.png") repeat center center/cover;
+}
+
+ion-card {
+  background: transparent;
+  box-shadow: none;
+}
+.orderAtCurruntLocationCard {
+  padding: 0;
+  margin: auto;
+  background: white;
+  margin-bottom: 15px;
+  width: 95%;
+  display: block;
+  ion-button {
+    margin: 0 !important;
+    --background-activated: #f1f1f1;
+    --background-focused: #f1f1f1;
+  }
+}
+
+ion-button {
+  --background-activated: #f1f1f1;
+  --background-focused: #f1f1f1;
+}
+
+.btn {
+  margin-bottom: 15px;
+  margin: auto auto 15px;
+  height: 60px;
+  --background: white;
+  --color: #1e1e1e;
+  font-weight: bold;
+  width: 96%;
+}
+.cityBtn {
+  margin: auto;
+  display: block;
+  width: 43%;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.subTitle {
+  margin: 0;
+  text-align: center;
+  color: #02353c;
+  font-size: 16px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+  padding-right: 15px;
+  font-weight: bold;
+  padding-top: 7px;
+}
+
+.padding {
+  padding: 15px !important;
+}
+
+.absolute-icon {
+  position: absolute;
+  left: var(--padding-start);
+}
+
+.slidesCardCatalog {
+  background: white !important;
+  width: 95% !important;
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+
+  ion-card-title {
+    font-size: 21px;
+  }
+
+  ion-card-content {
+    padding-top: 0px;
+  }
+
+  .backCatalogBtn {
+    outline: none;
+    position: relative;
+    top: 3px;
+    left: -2px;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: black;
+  }
+
+  p {
+    font-size: 16px;
+    color: black;
+  }
+}
+.pricing {
+  margin: auto;
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  .pay_img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+  .vehicleName {
+    font-size: 19px;
+    color: black;
+    float: left;
+  }
+
+  .price {
+    color: #02353c;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+
+    small {
+      color: #969696;
+      font-size: 17px;
+    }
+  }
+}
+ion-segment {
+  ion-segment-button {
+    img {
+      height: 50px;
+      width: 150px;
+      object-fit: contain;
+      margin-bottom: 13px;
+    }
+  }
+}
+.Navigation_icons {
+  font-size: 21px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -1px;
+}

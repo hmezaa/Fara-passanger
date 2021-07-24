@@ -1,0 +1,40 @@
+<ion-header color='transparent' class="ion-no-border">
+  <ion-toolbar color='transparent'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'contactUsPage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides>
+    <ion-slide>
+      <ion-card mode="ios" class="ion-padding">
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'contactUsPage.Subject' | translate}}</ion-label>
+          <ion-input [(ngModel)]="data.subject" placeholder="{{'contactUsPage.EnterSubject' | translate}}"></ion-input>
+        </ion-item>
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'contactUsPage.Email' | translate}}</ion-label>
+          <ion-input [(ngModel)]="data.email" placeholder="{{'contactUsPage.EnterEmail' | translate}}"></ion-input>
+        </ion-item>
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'contactUsPage.Message' | translate}}</ion-label>
+          <ion-textarea [(ngModel)]="data.message" rows="8" placeholder="{{'contactUsPage.Message' | translate}}"></ion-textarea>
+        </ion-item>
+        <br>
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="12">
+              <ion-button (click)="submit()" expand="block" color="primary">{{'contactUsPage.Submit' | translate}}</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

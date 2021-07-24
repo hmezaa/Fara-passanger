@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 9px;
+
+  ion-icon {
+    position: relative;
+    top: 7px;
+    font-size: 30px;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn {
+  --color: #02353c;
+  --background: white;
+  --box-shadow: 0;
+  font-weight: bold;
+}

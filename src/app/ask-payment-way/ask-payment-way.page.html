@@ -1,0 +1,43 @@
+<div class="inner-content" class="ion-padding" scrollY="false">
+  <p class="cost" *ngIf="way == 1">₴{{price}}</p>
+  <p class="title">
+    <b>
+      {{'askPayWayPage.title' | translate}}
+    </b>
+  </p>
+  <ion-grid class="ion-no-padding">
+    <ion-row (click)="onSelect('1')" class="row ion-no-padding">
+      <ion-col size="2">
+        <ion-icon class="icon" name="card-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <p class="text">{{'askPayWayPage.card' | translate}}</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row (click)="onSelect('2')" class="row ion-no-padding">
+      <ion-col size="2">
+        <ion-icon class="icon" name="cash-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <p class="text">{{'askPayWayPage.cash' | translate}}</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="way == 1" (click)="onSelect('3')" class="row ion-no-padding">
+      <ion-col size="2">
+        <ion-icon class="icon" name="diamond-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <p class="text">{{'askPayWayPage.bonus' | translate}}</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

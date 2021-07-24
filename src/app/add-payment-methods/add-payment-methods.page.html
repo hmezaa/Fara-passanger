@@ -1,0 +1,61 @@
+<ion-header color='transparent' class="ion-no-border">
+  <ion-toolbar color='transparent'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'addPaymentMethod.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides>
+    <ion-slide>
+      <ion-card mode="ios" class="ion-padding">
+        <img class="cardimg" src="assets/visamaster.png" alt="">
+        <p class="cardtext">{{'addPaymentMethod.visaandmaster' | translate}}</p>
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'addPaymentMethod.name' | translate}}</ion-label>
+          <ion-input [(ngModel)]="card.holder_name" placeholder="{{'addPaymentMethod.placeholder_name' | translate}}"></ion-input>
+        </ion-item>
+        <ion-item lines="none" mode="md">
+          <ion-label position="stacked">{{'addPaymentMethod.cdn' | translate}}</ion-label>
+          <ion-input [(ngModel)]="card.number" placeholder="**** **** **** ****" type="tel" maxlength="16">
+          </ion-input>
+        </ion-item>
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="5.8">
+              <ion-item lines="none" mode="md">
+                <ion-label position="stacked">{{'addPaymentMethod.expire' | translate}}</ion-label>
+                <ion-datetime (ionChange)="valueOfDateAndTime($event)" placeholder="MM-YYYY" pickerFormat="MM-YYYY" displayFormat="MM-YYYY"
+                  [yearValues]="allowedYears" mode="ios"></ion-datetime>
+              </ion-item>
+            </ion-col>
+            <ion-col size="0.4"></ion-col>
+            <ion-col size="5.8">
+              <ion-item lines="none" mode="md">
+                <ion-label position="stacked">{{'addPaymentMethod.cvv' | translate}}</ion-label>
+                <ion-input [(ngModel)]="card.cvc" placeholder="***" type="tel" maxlength="5"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid class="ion-no-padding ion-no-margin">
+          <ion-row class="ion-no-padding ion-no-margin">
+            <ion-col size="12">
+              <p class="FooterText">
+                {{'addPaymentMethod.secure' | translate}}
+              </p>
+            </ion-col>
+            <ion-col size="12">
+              <ion-button (click)="save()" expand="block" color="primary">{{'addPaymentMethod.save' | translate}}</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

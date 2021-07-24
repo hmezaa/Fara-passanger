@@ -1,0 +1,78 @@
+.title {
+ 
+    margin: 0;
+    text-align: left;
+    color: #a4a4a4;
+    padding-top: 15px;
+    font-size: 17px;
+    padding-left: 11px;
+    padding-bottom: 15px;
+
+}
+
+.row {
+    // border: 3px solid #02353c;
+    color: #02353c;
+    outline: none;
+    margin-bottom: 19px;
+    border-radius: 7px;
+}
+
+.icon {
+    font-size: 27px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 11px;
+    color: grey;
+}
+
+.text {
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 9px;
+    color: #a6a6a6;
+}
+
+.chevron {
+    font-size: 27px;
+    text-align: right;
+    margin-top: 11px;
+    float: right;
+    margin-right: 3px;
+}
+
+.savetitle {
+    text-align: center;
+    color: black;
+    font-size: 19px;
+}
+
+ion-spinner {
+    --color: #02353c;
+    display: block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    margin-top: 21px;
+    margin-top: 33px;
+}
+
+.subtitle {
+    margin: 0;
+    padding-top: 10px;
+    color: #a6a6a6;
+    font-weight: bold;
+    outline: none;
+}
+.cost {
+    text-align: left;
+    font-size: 30px;
+    color: #222428;
+    margin: 0;
+    padding-left: 7px;
+    padding-top: 7px;
+    font-weight: bold;
+}
