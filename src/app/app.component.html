@@ -1,0 +1,51 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu side="start" contentId="main-content" type="overlay">
+      <ion-content class="ion-content-menu">
+        <ion-slides class="swiper-no-swiping">
+          <ion-slide>
+            <ion-card mode="ios" class="animate__animated animate__fadeInLeft">
+              <ion-grid class="info">
+                <ion-row>
+                  <ion-col size="3">
+                    <img class="img" [src]="getImg()" alt="">
+                  </ion-col>
+                  <ion-col size="9">
+                    <p class="title">{{getName()}}</p>
+                    <p class="email">{{getPhone()}}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              <hr>
+              <ion-list class="list">
+                <ion-item button *ngFor='let item of navlist' lines="none" (click)='route(item.route);'>
+                  <ion-icon [name]="item.icon" slot="start"></ion-icon>
+                  <ion-label>{{'sideMenu.'+ item.title | translate }}</ion-label>
+                </ion-item>
+                <hr>
+                <ion-item button lines="none" (click)='logOut()'>
+                  <ion-icon name="exit-outline" slot="start"></ion-icon>
+                  <ion-label>{{'sideMenu.Logout' | translate }}</ion-label>
+                </ion-item>
+              </ion-list>
+              <br>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-content>
+      <ion-footer color="transparent" class="ion-no-border footer">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <p class="version">
+                Fara <br>
+                Version 1.0
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="main-content" main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

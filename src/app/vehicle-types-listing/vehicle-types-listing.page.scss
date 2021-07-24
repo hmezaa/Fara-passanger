@@ -1,0 +1,56 @@
+ion-segment {
+  ion-segment-button {
+    img {
+      height: 50px;
+      width: 150px;
+      object-fit: contain;
+    }
+  }
+}
+
+.CloseTitle {
+  margin: 0;
+  padding-top: 3px;
+}
+
+.close {
+  text-align: right;
+  margin: 0;
+
+  ion-icon {
+    background: #eb445a;
+    font-size: 24px;
+    color: white;
+    border-radius: 3px;
+  }
+}
+
+.footer {
+  padding: 21px;
+}
+
+.pricing {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 24px;
+
+  .pay_img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    color: #02353c;
+    font-size: 25px;
+    font-weight: bold;
+
+    small {
+      color: #969696;
+      font-size: 17px; 
+    }
+  }
+}

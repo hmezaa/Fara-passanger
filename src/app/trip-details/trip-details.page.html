@@ -1,0 +1,95 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon (click)="back()" class="back" name="chevron-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <p class="title">
+          {{'tripDetailsPage.bookingId' | translate}} -
+          #{{journeyObject?.bookingUniqueId}}
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="card">
+    <br>
+    <div class="img" style="width: 80%;" id="map-parent">
+      <agm-map [usePanning]="true" [zoom]="18" [zoomControl]="false" [streetViewControl]="false">
+        <agm-direction [origin]="journeyObject?.pickup" [destination]="journeyObject?.destination">
+        </agm-direction>
+      </agm-map>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <div class="circle"></div>
+          <div class="afterCircle"></div>
+        </ion-col>
+        <ion-col size="11">
+          <p class="textUnderCard">
+            <b>
+              {{'tripDetailsPage.pickUp' | translate}}
+              <br>
+              {{journeyObject?.pickDateTime}}
+            </b>
+          </p>
+          <p class="textUnderCard">{{journeyObject?.pickup}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <div class="circle"></div>
+        </ion-col>
+        <ion-col size="11">
+          <p class="textUnderCard">
+            <b>
+              {{'tripDetailsPage.destination' | translate}}
+              <br>
+              {{journeyObject?.endTripTime}}
+            </b>
+          </p>
+          <p class="textUnderCard">{{journeyObject?.destination}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <div class="circle2" [style.background]="journeyObject?.status == 'completed'? 'green':'red'"></div>
+        </ion-col>
+        <ion-col size="11">
+          <p class="textUnderCard">
+            <b>
+              {{'tripDetailsPage.status' | translate}}
+            </b>
+          </p>
+          <p class="textUnderCard" [style.color]="journeyObject?.status == 'completed'? 'green':'red'">
+            <b>{{journeyObject?.status | titlecase}}</b>
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="wallet-outline" class="payIcon"></ion-icon>
+        </ion-col>
+        <ion-col size="11">
+          <p class="textUnderCard">
+            <b>
+              {{'tripDetailsPage.paymentDetails' | translate}}
+            </b>
+          </p>
+          <p class="textUnderCard">{{journeyObject?.journeyCost}}₴
+            {{'tripDetailsPage.via' | translate}}
+            {{journeyObject?.paymentVia | titlecase}}
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <br>
+</ion-content>

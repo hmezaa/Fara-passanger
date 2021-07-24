@@ -1,0 +1,40 @@
+<div class="inner-content">
+  <ion-icon class="icoMic" name="mic-circle-outline"></ion-icon>
+  <p class="title" *ngIf="!getAudioPath() && !isAudioRecordingStarted()">{{'voiceOrderPage.Recordyourorder' |
+    translate}}</p>
+  <p class="title" *ngIf="isAudioRecordingStarted()">{{'voiceOrderPage.Recording' | translate}}</p>
+  <ion-button class="Btn" *ngIf="!getAudioPath() && !isAudioRecordingStarted()" mode="ios" color="success" size="small"
+    (click)="startRecord()">{{'voiceOrderPage.StartRecording' | translate}}</ion-button>
+  <ion-button color="danger" class="Btn" *ngIf="isAudioRecordingStarted()" size="small" (click)="stopRecord()">
+    {{'voiceOrderPage.StopRecording' | translate}} 
+  </ion-button>
+  <br>
+  <ion-grid *ngIf="getAudioPath() && isAudioRecordingEnded()" class="_3button">
+    <ion-row>
+      <ion-col size="4">
+        <ion-card (click)="retake()" button mode="md" class="ion-no-padding ion-no-margin card">
+          <ion-icon class="iconsList" name="refresh-outline"></ion-icon>
+          <p class="textList">{{'voiceOrderPage.Retake' | translate}}</p>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card button (click)="playOrPause()" *ngIf="!returnerIsPlaying()" mode="md"
+          class="ion-no-padding ion-no-margin card">
+          <ion-icon class="iconsList" name="play-outline"></ion-icon>
+          <p class="textList">{{'voiceOrderPage.Play' | translate}}</p>
+        </ion-card>
+        <ion-card button (click)="playOrPause()" *ngIf="returnerIsPlaying()" mode="md"
+          class="ion-no-padding ion-no-margin card">
+          <ion-icon class="iconsList" name="pause-outline"></ion-icon>
+          <p class="textList">{{'voiceOrderPage.Pause' | translate}}</p>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card (click)="continue()" button mode="md" class="ion-no-padding ion-no-margin card">
+          <ion-icon class="iconsList" name="send-outline"></ion-icon>
+          <p class="textList">{{'voiceOrderPage.Continue' | translate}}</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

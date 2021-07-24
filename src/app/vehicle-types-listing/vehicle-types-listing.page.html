@@ -1,0 +1,39 @@
+<ion-footer class="ion-no-border footer">
+  <ion-grid class="ion-no-padding ion-no-margin FooterHead">
+    <ion-row class="ion-no-padding ion-no-margin">
+      <ion-col size="9">
+        <p *ngIf="selectedValue.vehicle_type.vehicleName" class="CloseTitle">
+          Preffered package:
+          <b style="color: #2eaf7d;">
+            {{selectedValue.vehicle_type.vehicleName |titlecase}}
+          </b>
+        </p>
+        <p *ngIf="!selectedValue.vehicle_type.vehicleName" class="CloseTitle">
+          Choose package
+        </p>
+      </ion-col>
+      <ion-col size="3">
+        <p class="close">
+          <ion-icon (click)="CancelClick()" name="close-outline"></ion-icon>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <ion-segment scrollable (ionChange)="segmentChanged($event)" [value]="selectedValue">
+    <ion-segment-button *ngFor="let item of VehiclesPackages" [value]="item">
+      <img [src]="item.vehicle_type.image? url+item.vehicle_type.image:'assets/cool-white-modern.png'">
+      <ion-label>{{item.vehicle_type.vehicleName}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <br>
+  <div class="pricing">
+    <img src="assets/pay.png" class="pay_img" alt="">
+    <br>
+    <ion-label class="price">
+      {{getPrice()}} UAH<small> / km</small>
+    </ion-label>
+  </div>
+  <ion-button [disabled]="selectedValue.priceInCity == 0" mode="ios" (click)="Continue()" color="success"
+    expand="block">CONFIRM</ion-button>
+</ion-footer>

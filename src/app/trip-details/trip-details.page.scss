@@ -1,0 +1,156 @@
+agm-map {
+  height: 100%;
+  width: 100%;
+}
+
+.back {
+  font-size: 30px;
+  color: #02353c;
+  font-weight: bold;
+  outline: none;
+}
+
+.title {
+  font-size: 21px;
+  margin: 0;
+  color: #02353c;
+  font-weight: bold;
+}
+
+.subtitle_cancelled {
+  color: red;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.subtitle_completed {
+  margin: 0;
+  color: #2dd36f;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.warn {
+  color: red;
+  font-size: 33px;
+  margin: 0;
+  position: relative;
+  top: 9px;
+}
+
+.checked {
+  color: #2dd36f;
+  font-size: 33px;
+  margin: 0;
+  position: relative;
+  top: 9px;
+}
+
+.hr {
+  margin: auto;
+  display: block;
+  background: #02353c;
+  height: 5px;
+  width: 90%;
+}
+
+.img {
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  height: 367px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card {
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  width: 90%;
+  margin-top: 15px;
+
+  p {
+    margin: 0;
+  }
+
+  .textUnderCard {
+    color: black;
+    padding-top: 5px;
+
+    ion-icon {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  .time {
+    color: #02353c;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .incardimg {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+  }
+
+  .name {
+    color: #02353c;
+    font-weight: bold;
+  }
+
+  .email {
+    color: #02353c;
+  }
+
+  .footerText_cancelled {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding-top: 21px;
+  }
+
+  .footerText_completed {
+    text-align: center;
+    color: #02353c;
+    font-weight: bold;
+    padding-top: 21px;
+  }
+
+  .circle {
+    height: 13px;
+    width: 13px;
+    background: #02353c;
+    border-radius: 9px;
+    margin-top: 7px;
+  }
+  .circle2 {
+    height: 13px;
+    width: 13px;
+    border-radius: 9px;
+    margin-top: 7px;
+  }
+
+  .afterCircle {
+    height: 115%;
+    background: #02353c;
+    width: 0;
+    margin-left: 6px;
+    margin-top: 1px;
+    border: 1px solid #ffffff;
+    border-style: dashed;
+  }
+}
+.payIcon {
+  font-size: 21px;
+  padding-top: 5px;
+  color: #02353c;
+}
