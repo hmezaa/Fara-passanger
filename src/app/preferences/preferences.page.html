@@ -1,0 +1,62 @@
+<ion-header color='transparent' class="ion-no-border">
+  <ion-toolbar color='transparent'>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title color="dark">
+      <b>
+        {{'PreferencesPage.title' | translate}}
+      </b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="showList" class="list">
+    <ion-item button lines="none">
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-label>{{'PreferencesPage.call' | translate}}</ion-label>
+      <ion-select [value]="data.call" (ionChange)="onPrefferenceChange($event,'Call')" slot="end"
+        interface="action-sheet">
+        <ion-select-option *ngFor='let item of callOptions' [value]="item.preference">
+          {{item.preference}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item button lines="none">
+      <ion-icon name="chatbox-ellipses" slot="start"></ion-icon>
+      <ion-label>{{'PreferencesPage.Conversation' | translate}}</ion-label>
+      <ion-select (ionChange)="onPrefferenceChange($event,'Conversation')" [value]="data.conversation" slot="end"
+        interface="action-sheet">
+        <ion-select-option *ngFor='let item of ConversationOptions' [value]="item.preference">
+          {{item.preference}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item button lines="none">
+      <ion-icon name="car" slot="start"></ion-icon>
+      <ion-label>{{'PreferencesPage.OpenDoor' | translate}}</ion-label>
+      <ion-select (ionChange)="onPrefferenceChange($event,'Open Door')" [value]="data.openDoor" slot="end"
+        interface="action-sheet">
+        <ion-select-option *ngFor='let item of openDoorOptions' [value]="item.preference">
+          {{item.preference}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item button lines="none">
+      <ion-icon name="thermometer" slot="start"></ion-icon>
+      <ion-label>{{'PreferencesPage.Airconditioning' | translate}}</ion-label>
+      <ion-select (ionChange)="onPrefferenceChange($event,'Air conditioning')" [value]="data.airCondition" slot="end"
+        interface="action-sheet">
+        <ion-select-option *ngFor='let item of airConditioningOptions' [value]="item.preference">
+          {{item.preference}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer class="ion-no-border ion-padding">
+  <ion-button (click)="updatePreferences()" mode="ios" expand="block">
+    {{'PreferencesPage.Update' | translate}}
+  </ion-button>
+</ion-footer>
