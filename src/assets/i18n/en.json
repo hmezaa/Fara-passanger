@@ -1,0 +1,313 @@
+{
+  "aboutUsPage": {
+    "title": "About Us",
+    "taxi": "Fara Taxi",
+    "text": "Good things happen when people can move, whether across town or toward their dreams. Opportunities appear, open up, become reality. What started as a way to tap a button to get a ride has led to billions of moments of human connection as people around the world go all kinds of places in all kinds of ways with the help of our technology."
+  },
+  "addPaymentMethod": {
+    "title": "Add Your Card",
+    "visaandmaster": "Visa and Master cards are accepted",
+    "name": "NAME",
+    "placeholder_name": "Enter card holder name",
+    "cdn": "CREDIT CARD NUMBER",
+    "expire": "EXPIRES",
+    "cvv": "CVV / CVC",
+    "secure": "We will save your card information securely.",
+    "save": "SAVE",
+    "dear": "Dear ",
+    "paymentAdded": ", your payment method is added to your account.",
+    "fillAllFields": "Please fill all the fields"
+  },
+  "favDestinationPage": {
+    "title": "Favourite Destinations",
+    "placeholder": "Add your destination",
+    "noFound": "No Favourite Location Yet!",
+    "addFavDest": "Add Favourite Destination",
+    "addFavConfirm": "Are you sure you want to add this location into your favourite destinations?",
+    "cancel": "Cancel",
+    "add": "Add",
+    "locationAdded": "Favourite location added successfully.",
+    "locationDeleted": "Favourite location deleted successfully."
+  },
+  "askPayWayPage": {
+    "title": "How would you like to pay?",
+    "card": "Pay via card",
+    "cash": "Pay via cash",
+    "bonus": "Pay via Bonus",
+    "availableSoon": "This method will available soon"
+  },
+  "bookingOptionsPage": {
+    "title": "Select City",
+    "btn1": "Order at the current location",
+    "btn2": "Call for order",
+    "btn3": "Order, and the driver will call you",
+    "btn4": "Voice order",
+    "btn5": "Select on the map",
+    "switchCity": "Switch City",
+    "chooseCity": "Choose City",
+    "voiceOrderMsg": " <p><b>1)</b> Press and hold button. <br><b>2)</b> After sound signal legible say сar pick-up address.<br><b>3)</b> Please keep the microphone close to your face that we can hear you.<br><b>4)</b> In this matter, the main thing is not to rush, so that we will definitely understand you.<br>Already impatient to hear your voice. <br>Have a nice day and a comfortable trip for you.</p>",
+    "letsGo": "Let's Go",
+    "confirming": "Confirming Order...",
+    "driverNotFound": "OOPS! Currently no driver available in your area",
+    "serviceNotAvailable": "Currently this service is not available in ",
+    "ok": "OK",
+    "phoneConfirmation": "Phone number Confirmation",
+    "enterPhone": "Enter your phone number",
+    "cityAndPhoneRequired": "City and phone number is required",
+    "willRecieveCall": ", You will receive a call from driver shortly.",
+    "driverNotFoundIn": ", Driver not found in "
+  },
+  "chatPage": {
+    "placeholder": "Type Your Message..."
+  },
+  "contactUsPage": {
+    "title": "Contact Us",
+    "Subject": "Subject",
+    "EnterSubject": "Enter Subject",
+    "Email": "Email",
+    "EnterEmail": "Enter Email",
+    "Message": "Enter your message",
+    "Submit": "Submit",
+    "fillAllFields": "Please fill all the fields",
+    "dear": "Dear ",
+    "reqRecieved": " We have received your request. We will answer you within 24 to 48 Hours. Thanks",
+    "pleaseWait": "Please Wait..."
+  },
+  "editProfilePage": {
+    "title": "Edit Profile",
+    "FirstName": "First Name",
+    "Enterfirstname": "Enter first name",
+    "LastName": "Last Name",
+    "Enterlastname": "Enter last name",
+    "PhoneNumber": "Phone Number",
+    "UPDATE": "UPDATE",
+    "reqPending": "Requested to update and pending for approval",
+    "reqApproved": "Your Request of Update is Approved",
+    "reqDeclined": "Your Request of Update is Declined",
+    "alreadyOnPending": "Request to Update is already on pending.",
+    "reqUpdated": "Request Updated Successfully"
+  },
+  "HelpAndSupportPage": {
+    "title": "Help And Support",
+    "item1": "Privacy Policies",
+    "item2": "Terms And Conditions",
+    "item3": "Contact Us",
+    "item4": "About Us"
+  },
+  "homePage": {
+    "title": "Select On Map",
+    "Iamhere": "I am here",
+    "SelectPackage": "Select Package",
+    "RideNow": "Ride Now",
+    "ReserveNow": "Reserve",
+    "ok": "OK",
+    "invalidRoute": "Invalid Route",
+    "enterDest": "Enter Destination Please",
+    "pleaseWait": "Please Wait...",
+    "driverNotFound": "OOPS! Currently no driver available in your area"
+  },
+  "loginSelectionPage": {
+    "title": "Welcome Back!",
+    "AsGuest": "As Guest",
+    "or": "or",
+    "protectedBy": "This app is protected by",
+    "reCAPTCHA": "reCAPTCHA",
+    "andThe": "and the",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfServices": "Terms of Services",
+    "apply": "apply",
+    "pleaseWait": "Please Wait...",
+    "somethingWentsWrong": "Something wents wrong"
+  },
+  "otpPage": {
+    "otp": "OTP",
+    "confirmation": "Confirmation",
+    "waitingText": "Please wait for the SMS and enter the confirmation code within the input fields",
+    "somethingWentsWrong": "Oops! Something wents wrong",
+    "pleaseWait": "Please Wait...",
+    "loginWithOtherPhone": "Login with other phone number",
+    "registerNow": "Register Now",
+    "enterOtpCode": "Please enter otp code"
+  },
+  "bookingHistoryPage": {
+    "title": "Booking History",
+    "noFound": "You have'nt any trip yet",
+    "BookingID": "Booking ID",
+    "Tripto": "Trip to",
+    "SeeDetails": "See Details",
+    "Completed": "Completed",
+    "Cancelled": "Cancelled By",
+    "driver": "Driver",
+    "you": "You",
+    "load": "Loading more bookings..."
+  },
+  "newsPage": {
+    "title": "News",
+    "notFound": "No News Found"
+  },
+  "paymentMethodsPage": {
+    "title": "Payment Methods",
+    "HOLDERNAME": "HOLDER NAME",
+    "ExpriresDate": "Exprires Date",
+    "CVC": "CVC",
+    "noFound": "No Payment Method Saved yet",
+    "remove": "Remove",
+    "removeConfirm": "Are you sure to want to remove this payment method",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "removeSuccessfully": "Successfully Removed"
+  },
+  "cancelReasonPage": {
+    "title": "Journey Cancelled",
+    "subtitle": "Why did you cancel?",
+    "r1": "It took a long time to pick me up",
+    "r2": "My pickup address is wrong",
+    "r3": "The taxi driver has not moved",
+    "r4": "Another reason",
+    "r5": "I need to change destiny",
+    "close": "Close",
+    "rideCancelTitle": "Ride Cancelled",
+    "dear": "Dear",
+    "rideCancelMessage": "your ride is Cancelled due to",
+    "Okay": "Okay"
+  },
+  "PreferencesPage": {
+    "title": "Preferences",
+    "call": "Call",
+    "Conversation": "Conversation",
+    "OpenDoor": "Open Door",
+    "Airconditioning": "Air conditioning",
+    "Update": "Update",
+    "preferencesUpdated": "Preferences updated successfully.",
+    "noChanges": "No Changes Detected, Please select different prefernces before update."
+  },
+  "profilePage": {
+    "title": "Profile",
+    "hi": "Hi",
+    "item1": "Preferences",
+    "item2": "Edit Profile",
+    "item3": "Add Locations",
+    "item4": "Become a driver"
+  },
+  "ratingPage": {
+    "title": "Your journey is completed!",
+    "thanks": "Thank you for riding with Fara.",
+    "experience": "What was your experience?",
+    "comment": "Write your comment",
+    "Submit": "Submit"
+  },
+  "registerPage": {
+    "title": "Register Now",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "enterFirstName": "Enter your first name",
+    "enterLastName": "Enter your last name",
+    "skip": "Skip",
+    "continue": "Continue",
+    "pleaseWait": "Please Wait...",
+    "fillAllFields": "Please fill all the fields"
+  },
+  "reserveBookingConfirmationPage": {
+    "title": "Reserve",
+    "pickUp": "Pickup Time",
+    "Now": "Now",
+    "In30mins": "In 30 mins",
+    "In60mins": "In 60 mins",
+    "or": "OR",
+    "SelectDate": "Select (Date - Hours - Minutes)",
+    "text": "You can Pre Book a Fara Taxi vehicle in advance. Please press the reserve button after you select a specific date or time",
+    "selectDateTime": "Please Select Date Time"
+  },
+  "reservedBooking": {
+    "title": "Reserved Booking History",
+    "noReserve": "No Reserve Booking Yet!",
+    "pickUp": "Pickup",
+    "destination": "Destination",
+    "byAdmin": "(By Admin)",
+    "cost": "Cost",
+    "distance": "Distance",
+    "etaToDestination": "ETA To Destination",
+    "CancelBooking": "Cancel Booking",
+    "cancelConfirm": "Are you sure to want to cancel your reserve booking?",
+    "goBack": "Go Back",
+    "cancelNow": "Cancel Now"
+  },
+  "searchPage": {
+    "title": "Choose your destination",
+    "enterPickup": "Enter your pickup location",
+    "enterDestination": "Enter your destination",
+    "setLocation": "Set current location in pickup",
+    "addDestination": "Add a new destination"
+  },
+  "trackingPage": {
+    "searching": "Searching ...",
+    "bit": "It will take a bit",
+    "findingDrivers": "Finding drivers near you",
+    "contact": "Contact",
+    "call": "Call",
+    "cancel": "Cancel",
+    "Nodriver": "Oops! Not Found",
+    "sorryText": "Sorry, we did not found any driver. Try Later",
+    "okay": "Ok",
+    "Continue": "Continue",
+    "Dear": "Dear",
+    "opps": "Oops! Something wents wrong",
+    "sorry": "Sorry",
+    "noPhone": "has no phone option",
+    "bookingReserved": "Your booking is reserved successfully.",
+    "viewDetail": "View Details",
+    "covidSOPs": " Your trip is started.Please read <b> COVID - 19 </b> SOPs carefully. <br><p>⦿ Keep your distance from other people when you travel, where possible. <br>⦿ Avoid making unnecessary stops during your journey. <br>⦿ Wear a mask on your face. <br>⦿ Plan ahead, check for disruption before you leave, and avoid the busiest routes, as well as busy times. <br>⦿ Wash or sanitise your hands regularly.</p>",
+    "rideCancelled": "Ride Cancelled",
+    "cancelDueTo": " Passenger cancel this ride due to",
+    "ok": "Ok",
+    "continue": "Continue",
+    "driverNotFound": "OOPS! Driver Not Found",
+    "notFoundTryAgain": ", driver not found. Please try later."
+  },
+  "tripDetailsPage": {
+    "bookingId": "Booking ID",
+    "pickUp": "Pickup",
+    "destination": "Destination",
+    "status": "Status",
+    "paymentDetails": "Payment Details",
+    "via": "via"
+  },
+  "voiceOrderPage": {
+    "Recordyourorder": "Record your order",
+    "Recording": "Recording...",
+    "StartRecording": "Start Recording",
+    "StopRecording": "Stop Recording",
+    "Retake": "Retake",
+    "Play": "Play",
+    "Pause": "Pause",
+    "Continue": "Continue"
+  },
+  "sideMenu": {
+    "Home": "Home",
+    "MyTrips": "My Trips",
+    "ReserverdTrips": "Reserverd Trips",
+    "PaymentMethods": "Payment Methods",
+    "Profile": "Profile",
+    "News": "News",
+    "ChangeLanguage": "Change Language",
+    "InviteFriend": "Invite Friend",
+    "HelpAndSupport": "Help And Support",
+    "changeLanguage": "Change Language",
+    "cancel": "Cancel",
+    "change": "Change",
+    "Logout": "Logout"
+  },
+  "imageService": {
+    "chooseOne": "Choose One",
+    "msg": "From where you want to add image.",
+    "gallery": "Gallery",
+    "camera": "Camera",
+    "pleaseWait": "Please Wait...",
+    "error": "Error occured while uploading Image!"
+  },
+  "voiceOrderService": {
+    "pleaseWait": "Please Wait...",
+    "confirmingOrder": "Confirming Order",
+    "notFound": "OOPS! Currently no driver available in your area"
+  }
+}

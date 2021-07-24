@@ -1,0 +1,161 @@
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.searchModal .modal-wrapper {
+  height: 93%;
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 21px 21px 0px 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.selectVehileModal .modal-wrapper {
+  height: 405px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 21px 21px 0px 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.askpayway {
+  --height: auto;
+
+  .modal-wrapper {
+    width: 80%;
+    max-width: 342px;
+    display: block;
+    margin: auto;
+    background: white;
+    box-shadow: none;
+    // border: 5px solid yellow;
+    border-radius: 9px;
+
+    .ion-page {
+      position: relative;
+      display: block;
+      contain: content;
+
+      .inner-content {
+        max-height: 80vh;
+        overflow: auto;
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+.autoHightModal {
+  --height: auto;
+
+  .modal-wrapper {
+    width: 80%;
+    max-width: 342px;
+    display: block;
+    margin: auto;
+    background: white;
+    box-shadow: none;
+    // border: 5px solid yellow;
+    border-radius: 9px;
+
+    .ion-page {
+      position: relative;
+      display: block;
+      contain: content;
+
+      .inner-content {
+        max-height: 80vh;
+        overflow: auto;
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+.voiceorderAlert {
+  .alert-message.sc-ion-alert-md {
+    max-height: none !important;
+  }
+  .alert-wrapper.sc-ion-alert-md {
+    max-width: 92% !important;
+  }
+}
+
+.iti {
+  display: block !important;
+}
+
+.iti .dropdown-menu.country-dropdown {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-color: #c7cace;
+  margin-top: -1px;
+}
+.dropdown-menu.show {
+  // it will remove all dropdown list
+  display: block !important;
+}
+.iti .iti__country-list {
+  box-shadow: none;
+  font-size: 15px;
+  margin-left: 0;
+  width: 300px;
+  min-height: 250px;
+}
+
+.iti__flag-container.open + input {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.iti .search-container input {
+  font-size: 14px;
+  border-color: #c7cace;
+  border-radius: 0;
+  padding: 5px 10px;
+}
+
+.iti .search-container input:focus {
+  outline: none;
+}
+
+ngx-intl-tel-input input {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c7cace;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+}
+.card {
+  border: none !important;
+}
+.btn {
+  padding: 0 !important;
+  display: block !important;
+  font-size: unset !important;
+}
